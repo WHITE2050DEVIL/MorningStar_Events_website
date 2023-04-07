@@ -10,6 +10,7 @@
   <body>
     
     <div class="cont">
+      <form action="" method="post">
       <div class="form sign-in">
         <h2>Login</h2>
         <label>
@@ -20,15 +21,15 @@
           <span>Password</span>
           <input type="password" id="pwd" required/>
         </label>
-        <button class="submit m-in" type="button" onclick="loginbtn()" id="btn">Login</button>
+        <button class="submit m-in" type="button" onclick="loginUser()" id="btn">Login</button>
         <p class="forgot-pass">Forgot Password ?</p>
-
+      </form>
         <div class="social-media">
           <ul>
-            <li><img src="images/facebook.png" /></li>
-            <li><img src="images/twitter.png" /></li>
-            <li><img src="images/linkedin.png" /></li>
-            <li><img src="images/instagram.png" /></li>
+            <li><img src="images/facebook.png" alt=""></li>
+            <li><img src="images/twitter.png" alt=""></li>
+            <li><img src="images/linkedin.png" alt=""></li>
+            <li><img src="images/instagram.png" alt=""></li>
           </ul>
         </div>
       </div>
@@ -144,5 +145,6 @@ function signbtn(){
                         }
                         }
     </script>
+    <script src="./loginindex.js"></script>
   </body>
 </html>
