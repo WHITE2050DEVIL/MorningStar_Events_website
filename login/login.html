@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="login css.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>Login</h2>
+        <label>
+          <span>Email Address</span>
+          <input type="email" id="eml" required/>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="pwd" required/>
+        </label>
+        <button class="submit m-in" type="button" onclick="loginbtn()" id="btn">Login</button>
+        <p class="forgot-pass">Forgot Password ?</p>
+
+        <div class="social-media">
+          <ul>
+            <li><img src="images/facebook.png" /></li>
+            <li><img src="images/twitter.png" /></li>
+            <li><img src="images/linkedin.png" /></li>
+            <li><img src="images/instagram.png" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img-text m-up">
+            <h2>New here?</h2>
+            <p>Sign up and discover great amount of new opportunities!</p>
+          </div>
+          <div class="img-text m-in">
+            <h2>One of us?</h2>
+            <p>
+              If you already has an account, just sign in. We've missed you!
+            </p>
+          </div>
+          <div class="img-btn">
+            <span class="m-up">Sign Up</span>
+            <span class="m-in">Sign In</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <h2>Sign Up</h2>
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="mail" required />
+          </label>
+          <label>
+            <span>Phone Number</span>
+            <input type="phone" id="phno"  required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" id="pswd" required />
+          </label>
+          <label>
+            <span>Confirm Password</span>
+            <input type="password" id="cnpass" required />
+          </label>
+          <button class="submit" type="button" onclick="signbtn()" id="btn">Signup</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector('.img-btn').addEventListener('click', function()
+	    {
+		      document.querySelector('.cont').classList.toggle('s-signup')
+	    });
+function loginbtn(){
+                      var eml = document.getElementById("eml").value;
+                      var atposition = eml.indexOf("@");
+                      var dotposition = eml.lastIndexOf(".");
+                      var pass = document.getElementById("pwd").value;
+
+                        if(eml == ""){
+                            alert("Email cannot be empty");
+                        } 
+                        else if(atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= eml.length){
+                          alert("Invalid email id");
+                        }
+                        
+                        else if(pass == ""){
+                            alert("Password cannot be empty");
+                        } 
+                        else{
+                          alert("Success");  
+                        }
+                        }
+
+function signbtn(){
+                          var name = document.getElementById("name").value;
+                          var mail = document.getElementById("mail").value;
+                          var atposition = mail.indexOf("@");
+                          var dotposition = mail.lastIndexOf(".");
+                          var phno = document.getElementById("phno").value;
+                          var pass = document.getElementById("pswd").value;
+                          var cnpass = document.getElementById("cnpass").value;
+
+                        if(name == ""){
+                            alert("Name cannot be empty");
+                        }
+
+                        else if(mail == ""){
+                            alert("Email cannot be empty");
+                        } 
+                        
+                        else if(atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= mail.length){
+                          alert("Invalid email id");
+                        }
+
+                        else if(phno == "" || phno.length != 10){
+                            alert("Enter a valid phone number");
+                        }
+                        
+                        else if(pass == ""){
+                            alert("Password cannot be empty");
+                        } 
+
+                        else if(cnpass == ""){
+                          alert("Confirm Password");
+                        }
+
+                        else if(cnpass != pass){
+                          alert("Password doesn't match");
+                        }
+
+                        else{
+                          alert("Success");  
+                        }
+                        }
+    </script>
+  </body>
+</html>

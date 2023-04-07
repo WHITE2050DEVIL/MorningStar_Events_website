@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat", sans-serif;
+}
+
+body {
+	background: rgb(163, 163, 240);
+}
+
+.Container {
+	width: 50%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+	height: 616px;
+	background-color: rgb(252, 249, 249);
+}
+
+.testimonials {
+	width: 50%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: right;
+}
+
+h1 {
+	color: red;
+	font-size: 35px;
+}
+
+
+p {
+	font-size: 15px;
+	height: 103PX;
+	text-align: left;
+}
+
+h3 {
+	text-shadow: black
+}
+
+a {
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+
+	color: white;
+	border-radius: 8px;
+	font-size: 50px;
+}
+
+.icons,
+.nava {
+	display: flex;
+	height: 36px;
+}
+
+.col {
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.testimonial {
+	background: #fff;
+	padding: 30px;
+	width: 400px;
+	height: 228px;
+	margin-left: 150px;
+
+}
+
+.name {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.btn01 {
+	padding: 10px 10px;
+	margin-top: 10px;
+
+	outline: none;
+	color: #fff;
+	border: none;
+	font-weight: 500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: #f2219b;
+}
+
+.btn02 {
+	padding: 10px 10px;
+	margin-top: 10px;
+
+	outline: none;
+	color: #fff;
+	border: none;
+	font-weight: 500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: green;
+}
+
+.btn01:hover {
+	background: lightpink;
+}
+
+.btn02:hover {
+	background: light green;
+}
+
+span {
+	color: red;
+}
+
+.img {
+	margin-right: 10px;
+}
+
+.aaa {
+	font-size: 20px;
+	height: 60PX;
+	color: black;
+}

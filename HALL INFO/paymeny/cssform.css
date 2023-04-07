@@ -1,0 +1,114 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"montserrat",sans-serif;
+}
+body{
+	background: rgb(163, 163, 240);
+}
+.h4{
+	text-align: center;
+	font-size: 40%;
+}
+
+.testimonials {
+		width: 50%;
+		text-align: center;
+		margin-top: 150px;
+		margin-bottom: 200px;
+	  float: left;
+	}
+	
+
+.icons, .nava{
+	display:flex;
+	height: 36px;
+}
+
+.col{
+	flex:33.33%;
+	max-width:33.33%;
+	box-sizing:border-box;
+	padding:15px;
+}
+.testimonial{
+	background:#fff;
+	padding:30px;
+	width: 445px;
+	height: 400px;
+	margin-left: 150px;
+	
+}
+
+.form{
+	text-align: left	;
+	font-size: 20px;
+}
+
+Label {
+    Display: block;
+    Margin-bottom: 5px;
+    Font-weight: bold;
+  }
+  
+Input {
+    Display: block;
+    Width: 83%;
+    Padding: 10px;
+    Margin-bottom: 15px;
+    Border: 1px solid #ccc;
+    Border-radius: 4px;
+  }
+.name{
+	font-size:10%;
+	
+	margin:30px 0;
+}
+.btn01{
+	padding:10px 10px;
+	margin-top:60px;
+	
+	outline:none;
+	color:#fff;
+	border:none;
+	font-weight:500;
+	border-radius:5px;
+	letter-spacing:1px;
+	background:#f2219b;
+}
+
+ .btn01:hover{
+	background:lightpink;
+}
+
+
+.otp-input-wrapper {
+	width: 240px;
+	text-align: left;
+	display: inline-block;
+  }
+  .otp-input-wrapper input {
+	padding: 0;
+	width: 264px;
+	font-size: 25px;
+	font-weight: 600;
+	color: #3e3e3e;
+	background-color: transparent;
+	border: 0;
+	margin-left: 12px;
+	letter-spacing: 48px;
+	font-family: sans-serif !important;
+  }
+  .otp-input-wrapper input:focus {
+	box-shadow: none;
+	outline: none;
+  }
+  .otp-input-wrapper svg {
+	position: relative;
+	display: block;
+	width: 240px;
+	height: 2px;
+  }
+
+
+

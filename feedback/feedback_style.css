@@ -1,0 +1,47 @@
+*{
+    margin-top: 5vh;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(163,163,240);
+    font-size: 1.2em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+  }
+
+
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+  

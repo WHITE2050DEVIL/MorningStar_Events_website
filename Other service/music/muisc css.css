@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: rgb(163, 163, 240);
+}
+.testimonials {
+    padding: 40px 0;
+    color: black;
+    text-align: center;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: left;
+}
+.star{
+    color: yellow;
+}
+
+
+
+.testimonial {
+    background: white;
+    padding: 50px;
+}
+
+.testimonial img {
+    width: 350px;
+    height: 190px;
+
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: black;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.1 ease;
+}
+
+.btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+
+
+
+@media screen and (max-width:960px) {
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>booking</title>
+  <link rel="stylesheet" href="cssbooking.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>BOOK YOUR BUS</h1>
+    <form action=”/submit-bus-registration” method=”POST”>
+        <label for=”name”>Name:</label>
+        <input type=”text” id=”name” name=”name” required><br><br>
+      
+        <label for=”address”>Address:</label>
+        <input type=”text” id=”address” name=”address” required><br><br>
+      
+        <label for=”phone”>Phone:</label>
+        <input type=”tel” id=”phone” name=”phone” required><br><br>
+      
+        <label for="datetime">Date:</label>
+        <input type="datetime" id="datetime" name="datetime" required><br><br>
+      
+        <label for=”time”>Time:</label>
+        <input type=”time” id=”time” name=”time” required><br><br>
+      
+        <label for=”destination”>Destination:</label>
+        <input type=”text” id=”destination” name=”destination” required><br><br>
+      
+        <label for=”num-buses”>Number of Buses:</label>
+        <input type=”number” id=”num-buses” name=”num-buses” min=”1” max=”10” required><br><br>
+      
+        <button type=”submit”>Submit</button>
+      </form>
+  </div>
+</body>
+
+</html>
