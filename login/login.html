@@ -15,11 +15,11 @@
         <h2>Login</h2>
         <label>
           <span>Email Address</span>
-          <input type="email" id="eml" required/>
+          <input type="email" id="email" required/>
         </label>
         <label>
           <span>Password</span>
-          <input type="password" id="pwd" required/>
+          <input type="password" id="password" required/>
         </label>
         <button class="submit m-in" type="button" onclick="loginUser()" id="btn">Login</button>
         <p class="forgot-pass">Forgot Password ?</p>
@@ -52,28 +52,30 @@
           </div>
         </div>
         <div class="form sign-up">
+          <form method="post" >
           <h2>Sign Up</h2>
           <label>
             <span>Name</span>
-            <input type="text" id="name" required />
+            <input type="text" id="UserName" required />
           </label>
           <label>
             <span>Email</span>
-            <input type="email" id="mail" required />
+            <input type="email" id="email" required />
           </label>
           <label>
             <span>Phone Number</span>
-            <input type="phone" id="phno"  required />
+            <input type="phone" id="PhoneNo"  required />
           </label>
           <label>
             <span>Password</span>
-            <input type="password" id="pswd" required />
+            <input type="password" id="password" required />
           </label>
           <label>
             <span>Confirm Password</span>
             <input type="password" id="cnpass" required />
           </label>
-          <button class="submit" type="button" onclick="signbtn()" id="btn">Signup</button>
+          <button class="submit" type="button" onclick="signupUser()" id="btn">Signup</button>
+        </form>
         </div>
       </div>
     </div>
